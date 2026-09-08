@@ -412,6 +412,7 @@ header .content .fa-bars:hover {
   }
   .why-us .left .details-container details {
     width: 100%;
+    padding-right: 15px;
   }
   .why-us .left .details-container details > summary .fa-angle-right {
     left: 100%;
@@ -580,10 +581,9 @@ header .content .fa-bars:hover {
 @media only screen and (max-width: 650px) {
   .services .service-content {
     flex-wrap: wrap;
-    justify-content: center;
   }
   .services .service-content .boxes {
-    width: 80%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -648,7 +648,7 @@ header .content .fa-bars:hover {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 43%;
+  bottom: 50%;
   left: 10%;
 }
 .work-progress .work-content .box h4 {
@@ -676,14 +676,23 @@ header .content .fa-bars:hover {
   color: #47b2e4;
   font-size: 20px;
 }
+@media only screen and (max-width: 950px) {
+  .work-progress .work-content {
+    flex-wrap: wrap;
+  }
+  .work-progress .work-content .box {
+    width: 90%;
+  }
+  .work-progress .work-content .box h2 {
+    bottom: 40%;
+  }
+}
 @media only screen and (max-width: 650px) {
   .work-progress .work-content {
     flex-wrap: wrap;
   }
-}
-@media only screen and (max-width: 950px) {
-  .work-progress .work-content {
-    flex-wrap: wrap;
+  .work-progress .work-content .box h2 {
+    bottom: 45%;
   }
 }
 .cta {
@@ -748,13 +757,9 @@ header .content .fa-bars:hover {
   .cta .content .left h1 {
     text-align: center;
   }
-  .cta .content .right {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
   .cta .content .right button {
-    width: 30%;
+    align-items: center;
+    width: 100%;
     margin-top: 30px;
   }
 }
@@ -948,7 +953,7 @@ header .content .fa-bars:hover {
     overflow: hidden;
   }
   .team .content .box img {
-    width: 30%;
+    width: 20%;
     height: auto;
   }
   .team .content .box .box-content {
@@ -1060,6 +1065,9 @@ header .content .fa-bars:hover {
   }
   .pricing .pricing-content .boxes {
     width: 100%;
+  }
+  .pricing .pricing-content .boxes .box-content {
+    padding: 11px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -1228,8 +1236,22 @@ header .content .fa-bars:hover {
   transform: rotate(90deg);
 }
 @media only screen and (max-width: 650px) {
+  .faq {
+    justify-content: center;
+  }
+  .faq .content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .faq .content details[open] {
+    width: 86%;
+  }
   .faq .content details > summary .fa-angle-right {
     top: 20%;
+  }
+  .faq .content details {
+    padding: 20px;
+    width: 86%;
   }
 }
 .subscribe {
@@ -1309,11 +1331,16 @@ header .content .fa-bars:hover {
     justify-content: center;
     text-align: center;
   }
-  .subscribe .subscribe-content .left .left-content .btn {
-    margin-top: 50px;
+  .subscribe .subscribe-content .left .left-content .btn input {
+    width: 50%;
+    font-size: 10px;
+    padding-left: 8px;
   }
   .subscribe .subscribe-content .left .left-content .btn button {
-    width: 25%;
+    width: 50%;
+    margin-left: -5px;
+    font-size: 9px;
+    padding-left: 5px;
   }
   .subscribe .subscribe-content .right {
     width: 100%;
@@ -1454,7 +1481,20 @@ header .content .fa-bars:hover {
     width: 100%;
   }
   .blogpost .blog-content .box .date {
-    top: 57.3%;
+    top: 57%;
+    max-width: 30%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .blogpost .blog-content {
+    flex-wrap: wrap;
+  }
+  .blogpost .blog-content .box {
+    width: 100%;
+  }
+  .blogpost .blog-content .box .date {
+    top: 40%;
+    max-width: 30%;
   }
 }
 .contact {
@@ -1603,6 +1643,9 @@ header .content .fa-bars:hover {
   .contact .container .right {
     width: 100%;
   }
+  .contact .container .right .btn button {
+    width: 50%;
+  }
 }
 .join {
   padding: 3% 7%;
@@ -1654,7 +1697,7 @@ header .content .fa-bars:hover {
 }
 @media only screen and (max-width: 650px) {
   .join .subscribe button {
-    width: 20%;
+    width: 30%;
   }
 }
 footer {
