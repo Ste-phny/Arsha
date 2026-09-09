@@ -578,14 +578,6 @@ header .content .fa-bars:hover {
 .services .service-content .boxes img {
   width: 40px;
 }
-@media only screen and (max-width: 650px) {
-  .services .service-content {
-    flex-wrap: wrap;
-  }
-  .services .service-content .boxes {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 950px) {
   .services .service-content {
     flex-wrap: wrap;
@@ -595,6 +587,15 @@ header .content .fa-bars:hover {
     width: 43%;
   }
 }
+@media only screen and (max-width: 650px) {
+  .services .service-content {
+    flex-wrap: wrap;
+  }
+  .services .service-content .boxes {
+    width: 100%;
+  }
+}
+
 .work-progress {
   padding: 3% 7%;
 }
